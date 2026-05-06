@@ -56,13 +56,25 @@
       }
       emailInput.removeAttribute('aria-invalid');
 
-      // TODO: replace with a real Formspree / Mailchimp / Resend endpoint.
-      // Until then, just hide the form and show the success state.
-      form.style.display = 'none';
-      success.classList.add('is-visible');
-      // Move focus to the success message for screen readers.
-      success.setAttribute('tabindex', '-1');
-      success.focus();
+      // Send data to Formspree via AJAX
+      fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          form.style.display = 'none';
+          success.classList.add('is-visible');
+          success.setAttribute('tabindex', '-1');
+          success.focus();
+        } else {
+          alert("Oops! There was a problem submitting your form. Please try again.");
+        }
+      }).catch(error => {
+        alert("Oops! There was a problem submitting your form. Please try again.");
+      });
     });
   }
 
