@@ -140,7 +140,7 @@
   <div class="container topnav-inner">
     <a href="#" aria-label="Sprout — home">
       <!-- Logo lockup. Falls back to wordmark if SVG fails. TODO: confirm /assets/img/logos/logo-dark-green.svg ships -->
-      <img class="logo logo-default" src="assets/img/logos/logo-dark-green.svg" alt="Sprout">
+      <img class="logo logo-default" src="assets/img/logos/logo-black.svg" alt="Sprout">
       <img class="logo logo-inverted" src="assets/img/logos/logo-neon-green.svg" alt="Sprout" hidden>
     </a>
     <nav aria-label="Primary">
@@ -163,22 +163,6 @@
   </div>
 </header>
 
-<!-- Theme picker -->
-<div class="theme-picker" role="group" aria-label="Theme picker">
-  <span class="theme-picker-label">Theme</span>
-  <button class="theme-swatch" data-theme="theme-lime-on-white" aria-label="Lime on white"   aria-pressed="true"  style="--sw:#DAF64F"></button>
-  <button class="theme-swatch" data-theme="theme-teal-dominant"  aria-label="Teal dominant"  aria-pressed="false" style="--sw:#003E3B"></button>
-  <button class="theme-swatch" data-theme="theme-cream"          aria-label="Cream"           aria-pressed="false" style="--sw:#EFF8C5"></button>
-</div>
-
-<!-- Density toggle -->
-<div class="density-toggle" role="group" aria-label="Density toggle">
-  <button data-density="density-tight"  aria-pressed="false">Tight</button>
-  <button data-density=""                aria-pressed="true">Medium</button>
-  <button data-density="density-long"   aria-pressed="false">Long</button>
-</div>
-
-<main id="main">
 
 <!-- ============================================================
      HERO — VARIANT A
@@ -189,22 +173,17 @@
 <section class="hero-section hero-a" aria-labelledby="hero-a-headline">
   <div class="container">
     <div class="hero-inner">
-      <div class="hero-label">Variant A · Centered</div>
       <h1 id="hero-a-headline" class="hero-headline">
         Your neighbour's homemade cookies, <span class="accent">just a tap away.</span>
       </h1>
       <p class="hero-sub">
-        Sprout is a Bahrain-first community marketplace where home bakers, crafters and small makers get discovered by the people next door. No storefront, no shipping spreadsheets — just a digital shelf for your hobby.
+        Sprout is a Bahrain-first community marketplace where home bakers, crafters and small makers get discovered by the people next door. No storefront, no shipping spreadsheets, just a digital shelf for your hobby.
       </p>
       <div class="hero-cta-row">
         <a class="btn btn-primary btn-lg" href="#waitlist">Join the waitlist
           <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow-right"/></svg>
         </a>
         <a class="btn btn-ghost btn-lg" href="#how-it-works">See how it works</a>
-      </div>
-      <div class="hero-trust">
-        <span class="dot" aria-hidden="true"></span>
-        Built in Bahrain · Free for sellers · Arabic support coming soon
       </div>
     </div>
 
@@ -213,39 +192,8 @@
       <div class="phone-frame" role="img" aria-label="Sprout buyer home screen mockup">
         <span class="phone-notch"></span>
         <div class="phone-screen">
-          <div class="p-bow">
-            <div class="p-bow-row">
-              <span class="p-wordmark">Sprout</span>
-              <span class="p-avatar">A</span>
-            </div>
-            <div class="p-welcome">Wellcome back, Abdulla</div>
-            <div class="p-search">Search for anything</div>
-          </div>
-          <div class="p-body">
-            <div class="p-section-title">Categories</div>
-            <div class="p-cats">
-              <div class="p-cat"><div class="p-cat-icon"><svg><use href="#i-cake"/></svg></div><div class="p-cat-label">Sweets</div></div>
-              <div class="p-cat"><div class="p-cat-icon"><svg><use href="#i-pot"/></svg></div><div class="p-cat-label">Cooking</div></div>
-              <div class="p-cat"><div class="p-cat-icon"><svg><use href="#i-gift"/></svg></div><div class="p-cat-label">Gifts</div></div>
-              <div class="p-cat"><div class="p-cat-icon"><svg><use href="#i-craft"/></svg></div><div class="p-cat-label">Crafts</div></div>
-              <div class="p-cat"><div class="p-cat-icon"><svg><use href="#i-perfume"/></svg></div><div class="p-cat-label">Perfume</div></div>
-            </div>
-            <div class="p-banner">
-              <span class="p-banner-badge">NEW</span>
-              <span class="p-banner-text">Explore our<br>Fresh Additions.</span>
-            </div>
-            <div class="p-grid">
-              <div class="p-card"><div class="p-card-thumb"><svg><use href="#i-cake"/></svg></div><div class="p-card-meta"><div class="p-card-title">Layla's cookies</div><div class="p-card-price">3.5 BD</div></div></div>
-              <div class="p-card"><div class="p-card-thumb"><svg><use href="#i-craft"/></svg></div><div class="p-card-meta"><div class="p-card-title">Studio Noor</div><div class="p-card-price">8.0 BD</div></div></div>
-              <div class="p-card"><div class="p-card-thumb"><svg><use href="#i-perfume"/></svg></div><div class="p-card-meta"><div class="p-card-title">Bayt Perfumes</div><div class="p-card-price">12 BD</div></div></div>
-              <div class="p-card"><div class="p-card-thumb"><svg><use href="#i-gift"/></svg></div><div class="p-card-meta"><div class="p-card-title">Saar Sweets</div><div class="p-card-price">2.7 BD</div></div></div>
-            </div>
-          </div>
-          <div class="p-nav">
-            <div class="p-nav-tab is-active"><div class="p-nav-pill"><svg><use href="#i-home"/></svg></div><span>Home</span></div>
-            <div class="p-nav-tab"><svg><use href="#i-chat"/></svg><span>Chat</span></div>
-            <div class="p-nav-tab"><svg><use href="#i-heart"/></svg><span>Favourite</span></div>
-            <div class="p-nav-tab"><svg><use href="#i-rows"/></svg><span>Shelves</span></div>
+          <div style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--color-fg-muted); font-weight: 600; padding: 2rem;">
+            app image here
           </div>
         </div>
       </div>
@@ -253,257 +201,11 @@
       <div class="phone-frame" role="img" aria-label="Sprout seller store screen mockup">
         <span class="phone-notch"></span>
         <div class="phone-screen">
-          <div class="p-bow" style="height:144px">
-            <div class="p-bow-row">
-              <span style="font-size:11px;font-weight:600;color:#000">‹ Your store</span>
-              <span class="p-avatar">SB</span>
-            </div>
-            <div style="text-align:center;margin-top:18px">
-              <div style="font-size:14px;font-weight:800;color:#000">Sprout Bakes</div>
-              <div style="font-size:9px;color:#003E3B;opacity:.75;margin-top:2px">Adliya · Sweets &amp; Baking</div>
-            </div>
-          </div>
-          <div class="p-body">
-            <div class="p-stats">
-              <div class="p-stat"><div class="p-stat-num">84</div><div class="p-stat-label">Views</div></div>
-              <div class="p-stat"><div class="p-stat-num">3.5</div><div class="p-stat-label">Rating</div></div>
-              <div class="p-stat"><div class="p-stat-num">5</div><div class="p-stat-label">Orders</div></div>
-            </div>
-            <div class="p-section-title" style="margin-top:14px">Your shelves</div>
-            <div class="p-shelves">
-              <div class="p-shelf-card">
-                <div class="p-shelf-thumb"><svg><use href="#i-cake"/></svg></div>
-                <div class="p-shelf-title">Cardamom cookies</div>
-                <div class="p-shelf-price">3.5 BD</div>
-                <div class="p-shelf-edit">Edit</div>
-              </div>
-              <div class="p-shelf-card">
-                <div class="p-shelf-thumb"><svg><use href="#i-cake"/></svg></div>
-                <div class="p-shelf-title">Sourdough loaf</div>
-                <div class="p-shelf-price">2.7 BD</div>
-                <div class="p-shelf-edit">Edit</div>
-              </div>
-              <div class="p-shelf-card">
-                <div class="p-shelf-thumb"><svg><use href="#i-cake"/></svg></div>
-                <div class="p-shelf-title">Date maamoul</div>
-                <div class="p-shelf-price">4.0 BD</div>
-                <div class="p-shelf-edit">Edit</div>
-              </div>
-            </div>
-          </div>
-          <div class="p-fab" aria-hidden="true">+</div>
-          <div class="p-nav">
-            <div class="p-nav-tab"><svg><use href="#i-home"/></svg><span>Home</span></div>
-            <div class="p-nav-tab"><svg><use href="#i-chat"/></svg><span>Chat</span></div>
-            <div class="p-nav-tab"><svg><use href="#i-heart"/></svg><span>Favourite</span></div>
-            <div class="p-nav-tab is-active"><div class="p-nav-pill"><svg><use href="#i-rows"/></svg></div><span>Shelves</span></div>
+          <div style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--color-fg-muted); font-weight: 600; padding: 2rem;">
+            app image here
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<div class="hero-variant-tag">— Variant B below —</div>
-
-<!-- ============================================================
-     HERO — VARIANT B
-     Layout: split — text left, two phones right.
-     Phone arrangement: 2 phones overlapping, one rotated -6deg, the other 4deg.
-     ============================================================ -->
-<h2 class="sr-only">Hero — Variant B</h2>
-<section class="hero-section hero-b" aria-labelledby="hero-b-headline">
-  <div class="container">
-    <div class="hero-grid">
-      <div>
-        <div class="hero-label">Variant B · Split</div>
-        <h2 id="hero-b-headline" class="hero-headline">
-          Turn your hobby into income — get <span class="accent">discovered locally.</span>
-        </h2>
-        <p class="hero-sub">
-          From cardamom cookies to handmade cards to home-blended perfumes — Sprout gives every small Bahraini maker a digital shelf, a story, and a way to chat with neighbours who'd love to find them.
-        </p>
-        <div class="hero-cta-row">
-          <a class="btn btn-primary btn-lg" href="#waitlist">Join the waitlist
-            <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow-right"/></svg>
-          </a>
-          <a class="btn btn-ghost btn-lg" href="#how-it-works">See how it works</a>
-        </div>
-        <ul style="list-style:none;padding:0;margin:32px 0 0;display:flex;flex-direction:column;gap:10px;color:var(--color-fg-muted);font-size:var(--fs-small)">
-          <li style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" style="color:var(--sprout-teal);flex:0 0 auto"><use href="#i-check"/></svg> Free to list — no fees, no commission</li>
-          <li style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" style="color:var(--sprout-teal);flex:0 0 auto"><use href="#i-check"/></svg> Chat directly with buyers in-app</li>
-          <li style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" style="color:var(--sprout-teal);flex:0 0 auto"><use href="#i-check"/></svg> You arrange pickup or delivery, your way</li>
-        </ul>
-      </div>
-
-      <div class="phones-stack">
-        <!-- Phone arrangement: 2 phones, one rotated -6deg, one rotated 4deg, overlapping -->
-        <div class="phone-frame" role="img" aria-label="Sprout buyer home screen mockup">
-          <span class="phone-notch"></span>
-          <div class="phone-screen">
-            <div class="p-bow">
-              <div class="p-bow-row">
-                <span class="p-wordmark">Sprout</span>
-                <span class="p-avatar">A</span>
-              </div>
-              <div class="p-welcome">Wellcome back, Abdulla</div>
-              <div class="p-search">Search for anything</div>
-            </div>
-            <div class="p-body">
-              <div class="p-section-title">Near me</div>
-              <div class="p-grid">
-                <div class="p-card"><div class="p-card-thumb"><svg><use href="#i-cake"/></svg></div><div class="p-card-meta"><div class="p-card-title">Layla's cookies</div><div class="p-card-price">3.5 BD</div></div></div>
-                <div class="p-card"><div class="p-card-thumb"><svg><use href="#i-craft"/></svg></div><div class="p-card-meta"><div class="p-card-title">Studio Noor</div><div class="p-card-price">8.0 BD</div></div></div>
-                <div class="p-card"><div class="p-card-thumb"><svg><use href="#i-perfume"/></svg></div><div class="p-card-meta"><div class="p-card-title">Bayt Perfumes</div><div class="p-card-price">12 BD</div></div></div>
-                <div class="p-card"><div class="p-card-thumb"><svg><use href="#i-gift"/></svg></div><div class="p-card-meta"><div class="p-card-title">Riffa Gifts</div><div class="p-card-price">5.0 BD</div></div></div>
-              </div>
-            </div>
-            <div class="p-nav">
-              <div class="p-nav-tab is-active"><div class="p-nav-pill"><svg><use href="#i-home"/></svg></div><span>Home</span></div>
-              <div class="p-nav-tab"><svg><use href="#i-chat"/></svg><span>Chat</span></div>
-              <div class="p-nav-tab"><svg><use href="#i-heart"/></svg><span>Favourite</span></div>
-              <div class="p-nav-tab"><svg><use href="#i-rows"/></svg><span>Shelves</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="phone-frame" role="img" aria-label="Sprout seller store screen mockup">
-          <span class="phone-notch"></span>
-          <div class="phone-screen">
-            <div class="p-bow" style="height:144px">
-              <div class="p-bow-row">
-                <span style="font-size:11px;font-weight:600;color:#000">‹ Your store</span>
-                <span class="p-avatar">SB</span>
-              </div>
-              <div style="text-align:center;margin-top:18px">
-                <div style="font-size:14px;font-weight:800;color:#000">Sprout Bakes</div>
-                <div style="font-size:9px;color:#003E3B;opacity:.75;margin-top:2px">Adliya · Sweets &amp; Baking</div>
-              </div>
-            </div>
-            <div class="p-body">
-              <div class="p-stats">
-                <div class="p-stat"><div class="p-stat-num">84</div><div class="p-stat-label">Views</div></div>
-                <div class="p-stat"><div class="p-stat-num">3.5</div><div class="p-stat-label">Rating</div></div>
-                <div class="p-stat"><div class="p-stat-num">5</div><div class="p-stat-label">Orders</div></div>
-              </div>
-              <div class="p-section-title" style="margin-top:14px">Your shelves</div>
-              <div class="p-shelves">
-                <div class="p-shelf-card"><div class="p-shelf-thumb"><svg><use href="#i-cake"/></svg></div><div class="p-shelf-title">Cardamom cookies</div><div class="p-shelf-price">3.5 BD</div><div class="p-shelf-edit">Edit</div></div>
-                <div class="p-shelf-card"><div class="p-shelf-thumb"><svg><use href="#i-cake"/></svg></div><div class="p-shelf-title">Sourdough</div><div class="p-shelf-price">2.7 BD</div><div class="p-shelf-edit">Edit</div></div>
-                <div class="p-shelf-card"><div class="p-shelf-thumb"><svg><use href="#i-cake"/></svg></div><div class="p-shelf-title">Maamoul</div><div class="p-shelf-price">4.0 BD</div><div class="p-shelf-edit">Edit</div></div>
-              </div>
-            </div>
-            <div class="p-fab" aria-hidden="true">+</div>
-            <div class="p-nav">
-              <div class="p-nav-tab"><svg><use href="#i-home"/></svg><span>Home</span></div>
-              <div class="p-nav-tab"><svg><use href="#i-chat"/></svg><span>Chat</span></div>
-              <div class="p-nav-tab"><svg><use href="#i-heart"/></svg><span>Favourite</span></div>
-              <div class="p-nav-tab is-active"><div class="p-nav-pill"><svg><use href="#i-rows"/></svg></div><span>Shelves</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="hero-variant-tag">— Variant C below —</div>
-
-<!-- ============================================================
-     HERO — VARIANT C
-     Layout: full-bleed lime "Bow" header, headline sits below the wave,
-     two phones overlap the wave's curved edge.
-     Phone arrangement: 2 phones, slight outward fan, sitting on the bow.
-     This variant directly references the in-app _BowClipper shape.
-     ============================================================ -->
-<h2 class="sr-only">Hero — Variant C</h2>
-<section class="hero-section hero-c" aria-labelledby="hero-c-headline">
-  <div class="bow-band">
-    <div class="bow-inner">
-      <div class="hero-label" style="color:var(--sprout-teal);opacity:.7">Variant C · Bow header</div>
-      <h2 id="hero-c-headline" class="hero-headline">
-        Plant your seeds of talent. <br>Watch them <span class="accent" style="background:var(--sprout-teal);color:var(--sprout-lime);transform:rotate(-1deg)">bloom locally.</span>
-      </h2>
-      <p class="hero-sub" style="margin-inline:auto">
-        Sprout is the friendly digital shelf for everyone selling something they love — from your sister's homemade cookies to your neighbour's hand-stitched cards. Discoverable in seconds, no formal storefront required.
-      </p>
-    </div>
-  </div>
-
-  <div class="container" style="position:relative;z-index:5">
-    <div class="phones-row">
-      <!-- Phone arrangement: 2 phones overlapping the bow's curved edge from below -->
-      <div class="phone-frame" role="img" aria-label="Sprout buyer home screen mockup">
-        <span class="phone-notch"></span>
-        <div class="phone-screen">
-          <div class="p-bow">
-            <div class="p-bow-row">
-              <span class="p-wordmark">Sprout</span>
-              <span class="p-avatar">A</span>
-            </div>
-            <div class="p-welcome">Wellcome back, Abdulla</div>
-            <div class="p-search">Search for anything</div>
-          </div>
-          <div class="p-body">
-            <div class="p-banner" style="margin-top:0">
-              <span class="p-banner-badge">NEW</span>
-              <span class="p-banner-text">Explore our<br>Fresh Additions.</span>
-            </div>
-            <div class="p-section-title" style="margin-top:14px">Near me</div>
-            <div class="p-grid">
-              <div class="p-card"><div class="p-card-thumb"><svg><use href="#i-cake"/></svg></div><div class="p-card-meta"><div class="p-card-title">Layla's cookies</div><div class="p-card-price">3.5 BD</div></div></div>
-              <div class="p-card"><div class="p-card-thumb"><svg><use href="#i-craft"/></svg></div><div class="p-card-meta"><div class="p-card-title">Studio Noor</div><div class="p-card-price">8.0 BD</div></div></div>
-            </div>
-          </div>
-          <div class="p-nav">
-            <div class="p-nav-tab is-active"><div class="p-nav-pill"><svg><use href="#i-home"/></svg></div><span>Home</span></div>
-            <div class="p-nav-tab"><svg><use href="#i-chat"/></svg><span>Chat</span></div>
-            <div class="p-nav-tab"><svg><use href="#i-heart"/></svg><span>Favourite</span></div>
-            <div class="p-nav-tab"><svg><use href="#i-rows"/></svg><span>Shelves</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="phone-frame" role="img" aria-label="Sprout seller store screen mockup">
-        <span class="phone-notch"></span>
-        <div class="phone-screen">
-          <div class="p-bow" style="height:120px">
-            <div class="p-bow-row">
-              <span style="font-size:11px;font-weight:600;color:#000">‹ Your store</span>
-              <span class="p-avatar">SB</span>
-            </div>
-            <div style="text-align:center;margin-top:14px">
-              <div style="font-size:14px;font-weight:800;color:#000">Sprout Bakes</div>
-            </div>
-          </div>
-          <div class="p-body">
-            <div class="p-stats">
-              <div class="p-stat"><div class="p-stat-num">84</div><div class="p-stat-label">Views</div></div>
-              <div class="p-stat"><div class="p-stat-num">3.5</div><div class="p-stat-label">Rating</div></div>
-              <div class="p-stat"><div class="p-stat-num">5</div><div class="p-stat-label">Orders</div></div>
-            </div>
-            <div class="p-section-title" style="margin-top:14px">Your shelves</div>
-            <div class="p-shelves">
-              <div class="p-shelf-card"><div class="p-shelf-thumb"><svg><use href="#i-cake"/></svg></div><div class="p-shelf-title">Cookies</div><div class="p-shelf-price">3.5 BD</div><div class="p-shelf-edit">Edit</div></div>
-              <div class="p-shelf-card"><div class="p-shelf-thumb"><svg><use href="#i-cake"/></svg></div><div class="p-shelf-title">Sourdough</div><div class="p-shelf-price">2.7 BD</div><div class="p-shelf-edit">Edit</div></div>
-            </div>
-          </div>
-          <div class="p-fab" aria-hidden="true">+</div>
-          <div class="p-nav">
-            <div class="p-nav-tab"><svg><use href="#i-home"/></svg><span>Home</span></div>
-            <div class="p-nav-tab"><svg><use href="#i-chat"/></svg><span>Chat</span></div>
-            <div class="p-nav-tab"><svg><use href="#i-heart"/></svg><span>Favourite</span></div>
-            <div class="p-nav-tab is-active"><div class="p-nav-pill"><svg><use href="#i-rows"/></svg></div><span>Shelves</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div style="text-align:center;margin-top:8px">
-      <a class="btn btn-primary btn-lg" href="#waitlist">Join the waitlist
-        <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow-right"/></svg>
-      </a>
-      <a class="btn btn-ghost btn-lg" href="#how-it-works" style="margin-left:10px">See how it works</a>
     </div>
   </div>
 </section>
@@ -528,7 +230,7 @@
           <span class="how-step-num">1</span>
           <div>
             <div class="how-step-title">Browse local shelves</div>
-            <p class="how-step-body">Open the app and see what neighbours are making — sorted by distance from you. Sweets, gifts, perfumes, crafts.</p>
+            <p class="how-step-body">Open the app and see what neighbours are making, sorted by distance from you. Sweets, gifts, perfumes, crafts.</p>
           </div>
         </div>
         <div class="how-step">
@@ -542,14 +244,14 @@
           <span class="how-step-num">3</span>
           <div>
             <div class="how-step-title">Arrange pickup or delivery yourselves</div>
-            <p class="how-step-body">Sprout doesn't handle payments or logistics — you and the seller agree on what works. Pick up at a café, swap at the door, whatever fits.</p>
+            <p class="how-step-body">Sprout doesn't handle payments or logistics, you and the seller agree on what works. Pick up at a café, swap at the door, whatever fits.</p>
           </div>
         </div>
       </article>
 
       <article class="how-col">
         <span class="how-col-eyebrow"><svg width="14" height="14"><use href="#i-rows"/></svg> For sellers</span>
-        <h3 class="how-col-title">Set up your shelf in minutes — not in a CR application.</h3>
+        <h3 class="how-col-title">Set up your shelf in minutes, not in a CR application.</h3>
         <div class="how-step">
           <span class="how-step-num">1</span>
           <div>
@@ -575,6 +277,112 @@
     </div>
   </div>
 </section>
+<!-- ============================================================
+     HERO — VARIANT B
+     Layout: split — text left, two phones right.
+     Phone arrangement: 2 phones overlapping, one rotated -6deg, the other 4deg.
+     ============================================================ -->
+<h2 class="sr-only">Hero — Variant B</h2>
+<section class="hero-section hero-b" aria-labelledby="hero-b-headline">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <h2 id="hero-b-headline" class="hero-headline">
+          Turn your hobby into income, <span class="accent">get discovered locally.</span>
+        </h2>
+        <p class="hero-sub">
+          From cardamom cookies to handmade cards to home-blended perfumes, Sprout gives every small Bahraini maker a digital shelf, a story, and a way to chat with neighbours who'd love to find them.
+        </p>
+        <div class="hero-cta-row">
+          <a class="btn btn-primary btn-lg" href="#waitlist">Join the waitlist
+            <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#how-it-works">See how it works</a>
+        </div>
+        <ul style="list-style:none;padding:0;margin:32px 0 0;display:flex;flex-direction:column;gap:10px;color:var(--color-fg-muted);font-size:var(--fs-small)">
+          <li style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" style="color:var(--sprout-teal);flex:0 0 auto"><use href="#i-check"/></svg> Free to list .. no fees, no commission</li>
+          <li style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" style="color:var(--sprout-teal);flex:0 0 auto"><use href="#i-check"/></svg> Chat directly with buyers in-app</li>
+          <li style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" style="color:var(--sprout-teal);flex:0 0 auto"><use href="#i-check"/></svg> You arrange pickup or delivery, your way</li>
+        </ul>
+      </div>
+
+      <div class="phones-stack">
+        <!-- Phone arrangement: 2 phones, one rotated -6deg, one rotated 4deg, overlapping -->
+        <div class="phone-frame" role="img" aria-label="Sprout buyer home screen mockup">
+          <span class="phone-notch"></span>
+          <div class="phone-screen">
+            <div style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--color-fg-muted); font-weight: 600; padding: 2rem;">
+              app image here
+            </div>
+          </div>
+        </div>
+
+        <div class="phone-frame" role="img" aria-label="Sprout seller store screen mockup">
+          <span class="phone-notch"></span>
+          <div class="phone-screen">
+            <div style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--color-fg-muted); font-weight: 600; padding: 2rem;">
+              app image here
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HERO — VARIANT C
+     Layout: full-bleed lime "Bow" header, headline sits below the wave,
+     two phones overlap the wave's curved edge.
+     Phone arrangement: 2 phones, slight outward fan, sitting on the bow.
+     This variant directly references the in-app _BowClipper shape.
+     ============================================================ -->
+<h2 class="sr-only">Hero — Variant C</h2>
+<section class="hero-section hero-c" aria-labelledby="hero-c-headline">
+  <div class="bow-band">
+    <div class="bow-inner">
+      <h2 id="hero-c-headline" class="hero-headline">
+        Plant seeds of talent. <br>Watch them <span class="accent" style="background:var(--sprout-teal);color:var(--sprout-lime);transform:rotate(-1deg)">bloom locally.</span>
+      </h2>
+      <p class="hero-sub" style="margin-inline:auto">
+        Sprout is the friendly digital shelf for everyone selling something they love, from your sister's homemade cookies to your neighbour's hand-stitched cards. Discoverable in seconds, no formal storefront required.
+      </p>
+    </div>
+  </div>
+
+  <div class="container" style="position:relative;z-index:5">
+    <div class="phones-row">
+      <!-- Phone arrangement: 2 phones overlapping the bow's curved edge from below -->
+      <div class="phone-frame" role="img" aria-label="Sprout buyer home screen mockup">
+        <span class="phone-notch"></span>
+        <div class="phone-screen">
+          <div style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--color-fg-muted); font-weight: 600; padding: 2rem;">
+            app image here
+          </div>
+        </div>
+      </div>
+
+      <div class="phone-frame" role="img" aria-label="Sprout seller store screen mockup">
+        <span class="phone-notch"></span>
+        <div class="phone-screen">
+          <div style="height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--color-fg-muted); font-weight: 600; padding: 2rem;">
+            app image here
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div style="text-align:center;margin-top:8px">
+      <a class="btn btn-primary btn-lg" href="#waitlist">Join the waitlist
+        <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+      </a>
+      <a class="btn btn-ghost btn-lg" href="#how-it-works" style="margin-left:10px">See how it works</a>
+    </div>
+  </div>
+</section>
+
+
 
 
 <!-- ============================================================
@@ -584,16 +392,16 @@
   <div class="container">
     <div style="text-align:center;max-width:680px;margin:0 auto var(--space-8)">
       <span class="eyebrow">Categories</span>
-      <h2 id="cat-title" class="section-title" style="margin-top:18px">Six shelves to plant your talent on.</h2>
-      <p class="section-lede" style="margin-inline:auto">More are coming as the community grows — start with the six categories Sprout launches in.</p>
+      <h2 id="cat-title" class="section-title" style="margin-top:18px">Shelves to plant your talent on.</h2>
+      <p class="section-lede" style="margin-inline:auto">More are coming as the community grows, start with the six categories Sprout launches in.</p>
     </div>
     <div class="cats-grid">
-      <a class="cat-tile" href="#"><span class="cat-icon"><svg><use href="#i-cake"/></svg></span><div><div class="cat-label">Sweets &amp; Baking</div><div class="cat-sub">Cookies, cakes, maamoul</div></div></a>
-      <a class="cat-tile" href="#"><span class="cat-icon"><svg><use href="#i-pot"/></svg></span><div><div class="cat-label">Home Cooking</div><div class="cat-sub">Saucy, comforting, made-to-order</div></div></a>
-      <a class="cat-tile" href="#"><span class="cat-icon"><svg><use href="#i-gift"/></svg></span><div><div class="cat-label">Gifts</div><div class="cat-sub">Hampers, custom keepsakes</div></div></a>
-      <a class="cat-tile" href="#"><span class="cat-icon"><svg><use href="#i-craft"/></svg></span><div><div class="cat-label">Crafts &amp; Home Decor</div><div class="cat-sub">Handmade, hand-finished, one-of-one</div></div></a>
-      <a class="cat-tile" href="#"><span class="cat-icon"><svg><use href="#i-perfume"/></svg></span><div><div class="cat-label">Perfumes</div><div class="cat-sub">Bahraini-blended attars and oud</div></div></a>
-      <a class="cat-tile" href="#"><span class="cat-icon"><svg><use href="#i-tshirt"/></svg></span><div><div class="cat-label">Fashion</div><div class="cat-sub">Stitched, embroidered, made for you</div></div></a>
+      <a class="cat-tile" href="#"><span class="cat-icon"><img src="assets/icons/category/Baking.png" alt="Baking"></span><div><div class="cat-label">Sweets &amp; Baking</div><div class="cat-sub">Cookies, cakes, maamoul</div></div></a>
+      <a class="cat-tile" href="#"><span class="cat-icon"><img src="assets/icons/category/home-cooking.png" alt="Home Cooking"></span><div><div class="cat-label">Home Cooking</div><div class="cat-sub">Saucy, comforting, made-to-order</div></div></a>
+      <a class="cat-tile" href="#"><span class="cat-icon"><img src="assets/icons/category/gift.png" alt="Gifts"></span><div><div class="cat-label">Gifts</div><div class="cat-sub">Hampers, custom keepsakes</div></div></a>
+      <a class="cat-tile" href="#"><span class="cat-icon"><img src="assets/icons/category/Crafts.png" alt="Crafts"></span><div><div class="cat-label">Crafts &amp; Home Decor</div><div class="cat-sub">Handmade, hand-finished, one-of-one</div></div></a>
+      <a class="cat-tile" href="#"><span class="cat-icon"><img src="assets/icons/category/perfume.png" alt="Perfumes"></span><div><div class="cat-label">Perfumes</div><div class="cat-sub">Bahraini-blended attars and oud</div></div></a>
+      <a class="cat-tile" href="#"><span class="cat-icon"><img src="assets/icons/category/fastion.png" alt="Fashion"></span><div><div class="cat-label">Fashion</div><div class="cat-sub">Stitched, embroidered, made for you</div></div></a>
     </div>
   </div>
 </section>
@@ -606,28 +414,28 @@
   <div class="container">
     <div style="text-align:center;max-width:680px;margin:0 auto var(--space-9)">
       <span class="eyebrow">Why Sprout</span>
-      <h2 id="why-title" class="section-title" style="margin-top:18px">Built for neighbours, not for empires.</h2>
-      <p class="section-lede" style="margin-inline:auto">A handful of values guide the way Sprout is built — and the things it deliberately doesn't do.</p>
+      <h2 id="why-title" class="section-title" style="margin-top:18px">Built for local communities, not for empires.</h2>
+      <p class="section-lede" style="margin-inline:auto">A handful of values guide the way Sprout is built, and the things it deliberately doesn't do.</p>
     </div>
 
     <div class="why-grid">
       <article class="why-card">
-        <div class="why-illust"><img src="assets/img/illustrations/illustration-01.svg" alt=""></div>
+        <div class="why-illust"><img src="assets/img/illustrations/Black/illustration-01.svg" alt=""></div>
         <h3>Community first</h3>
         <p>Sprout is for the neighbour who bakes on weekends, the cousin sewing on the side, the friend with a perfume hobby. Local talent finds local hands.</p>
       </article>
       <article class="why-card">
-        <div class="why-illust"><img src="assets/img/illustrations/illustration-04.svg" alt=""></div>
+        <div class="why-illust"><img src="assets/img/illustrations/Black/illustration-04.svg" alt=""></div>
         <h3>Trust &amp; safety</h3>
         <p>In-app reporting, blocking, and clear community guidelines keep things friendly. Home-kitchen items show a food safety notice on first contact.</p>
       </article>
       <article class="why-card">
-        <div class="why-illust"><img src="assets/img/illustrations/illustration-07.svg" alt=""></div>
+        <div class="why-illust"><img src="assets/img/illustrations/Black/illustration-07.svg" alt=""></div>
         <h3>Refreshingly simple</h3>
         <p>No fees, no commission, no shipping rules to memorise. List in minutes, chat to buyers, agree on pickup. Sprout just clears the path.</p>
       </article>
       <article class="why-card">
-        <div class="why-illust"><img src="assets/img/illustrations/illustration-10.svg" alt=""></div>
+        <div class="why-illust"><img src="assets/img/illustrations/Black/illustration-10.svg" alt=""></div>
         <h3>Empowering by design</h3>
         <p>You don't need a CR, a logo agency or a thousand followers. If you make something good, Sprout helps the right people find it.</p>
       </article>
@@ -646,24 +454,23 @@
         <span class="eyebrow">Featured shelves</span>
         <h2 id="creators-title" class="section-title" style="margin-top:18px">Bahraini makers, sprouting up.</h2>
       </div>
-      <p style="max-width:38ch;color:var(--color-fg-muted);font-size:var(--fs-h4);margin:0">A peek at the kind of shelves you'll find on day one. Real names coming soon.</p>
     </div>
 
     <div class="creators-row" role="list">
       <article class="shelf-card" role="listitem">
-        <div class="shelf-thumb"><span class="shelf-tag">New</span><img src="assets/img/illustrations/illustration-02.svg" alt=""></div>
+        <div class="shelf-thumb"><span class="shelf-tag">New</span><img src="assets/img/illustrations/illustration-06.svg" alt=""></div>
         <div class="shelf-meta"><h3 class="shelf-name">Layla's Cardamom Cookies</h3><p class="shelf-creator">by Layla A. · home baker</p>
           <div class="shelf-row"><span class="shelf-area"><svg width="14" height="14"><use href="#i-pin"/></svg> Adliya</span><span class="shelf-price">3.5 BD</span></div>
         </div>
       </article>
       <article class="shelf-card" role="listitem">
-        <div class="shelf-thumb"><img src="assets/img/illustrations/illustration-03.svg" alt=""></div>
+        <div class="shelf-thumb"><img src="assets/img/illustrations/illustration-06.svg" alt=""></div>
         <div class="shelf-meta"><h3 class="shelf-name">Studio Noor — Handmade Cards</h3><p class="shelf-creator">by Noor R. · paper crafter</p>
           <div class="shelf-row"><span class="shelf-area"><svg width="14" height="14"><use href="#i-pin"/></svg> Saar</span><span class="shelf-price">2.0 BD</span></div>
         </div>
       </article>
       <article class="shelf-card" role="listitem">
-        <div class="shelf-thumb"><span class="shelf-tag">Featured</span><img src="assets/img/illustrations/illustration-05.svg" alt=""></div>
+        <div class="shelf-thumb"><span class="shelf-tag">Featured</span><img src="assets/img/illustrations/illustration-06.svg" alt=""></div>
         <div class="shelf-meta"><h3 class="shelf-name">Bayt Perfumes</h3><p class="shelf-creator">by Hessa M. · home blender</p>
           <div class="shelf-row"><span class="shelf-area"><svg width="14" height="14"><use href="#i-pin"/></svg> Riffa</span><span class="shelf-price">12 BD</span></div>
         </div>
@@ -675,25 +482,25 @@
         </div>
       </article>
       <article class="shelf-card" role="listitem">
-        <div class="shelf-thumb"><img src="assets/img/illustrations/illustration-08.svg" alt=""></div>
+        <div class="shelf-thumb"><img src="assets/img/illustrations/illustration-06.svg" alt=""></div>
         <div class="shelf-meta"><h3 class="shelf-name">Bayan's Embroidered Thobes</h3><p class="shelf-creator">by Bayan S. · seamstress</p>
           <div class="shelf-row"><span class="shelf-area"><svg width="14" height="14"><use href="#i-pin"/></svg> Hidd</span><span class="shelf-price">28 BD</span></div>
         </div>
       </article>
       <article class="shelf-card" role="listitem">
-        <div class="shelf-thumb"><span class="shelf-tag">New</span><img src="assets/img/illustrations/illustration-09.svg" alt=""></div>
+        <div class="shelf-thumb"><span class="shelf-tag">New</span><img src="assets/img/illustrations/illustration-06.svg" alt=""></div>
         <div class="shelf-meta"><h3 class="shelf-name">Date &amp; Honey Hampers</h3><p class="shelf-creator">by Yusuf A. · gift maker</p>
           <div class="shelf-row"><span class="shelf-area"><svg width="14" height="14"><use href="#i-pin"/></svg> Seef</span><span class="shelf-price">8.5 BD</span></div>
         </div>
       </article>
       <article class="shelf-card" role="listitem">
-        <div class="shelf-thumb"><img src="assets/img/illustrations/illustration-11.svg" alt=""></div>
+        <div class="shelf-thumb"><img src="assets/img/illustrations/illustration-06.svg" alt=""></div>
         <div class="shelf-meta"><h3 class="shelf-name">Hala's Soy Candles</h3><p class="shelf-creator">by Hala D. · candle maker</p>
           <div class="shelf-row"><span class="shelf-area"><svg width="14" height="14"><use href="#i-pin"/></svg> Budaiya</span><span class="shelf-price">6.5 BD</span></div>
         </div>
       </article>
       <article class="shelf-card" role="listitem">
-        <div class="shelf-thumb"><img src="assets/img/illustrations/illustration-12.svg" alt=""></div>
+        <div class="shelf-thumb"><img src="assets/img/illustrations/illustration-06.svg" alt=""></div>
         <div class="shelf-meta"><h3 class="shelf-name">Khalid's Walnut Boxes</h3><p class="shelf-creator">by Khalid F. · woodworker</p>
           <div class="shelf-row"><span class="shelf-area"><svg width="14" height="14"><use href="#i-pin"/></svg> Sanad</span><span class="shelf-price">14 BD</span></div>
         </div>
@@ -717,17 +524,17 @@
       <article class="trust-card">
         <div class="trust-illust"><svg><use href="#i-shield"/></svg></div>
         <h3>Home-kitchen aware</h3>
-        <p>Anything baked or cooked at home shows a friendly food-safety notice the first time you open a chat — ingredients, allergens, and a "made at home" tag. So you know exactly what you're getting.</p>
+        <p>Anything baked or cooked at home shows a friendly food-safety notice the first time you open a chat, ingredients, allergens, and a "made at home" tag. So you know exactly what you're getting.</p>
       </article>
       <article class="trust-card">
         <div class="trust-illust"><svg><use href="#i-flag"/></svg></div>
         <h3>One-tap reporting</h3>
-        <p>Spam, harassment, anything off — report it from the chat or the listing. Reports go to a real human, not a black hole. Most are reviewed in 24–48 hours.</p>
+        <p>Spam, harassment, anything off you can report it from the chat or the listing. Reports go to a real human, not a black hole. Most are reviewed in 24–48 hours.</p>
       </article>
       <article class="trust-card">
         <div class="trust-illust"><svg><use href="#i-people"/></svg></div>
         <h3>Block + community guidelines</h3>
-        <p>Block anyone you don't want to hear from. Our community guidelines are short, plain-spoken, and pinned where they matter — before your first chat with someone new.</p>
+        <p>Block anyone you don't want to hear from. Our community guidelines are short, plain-spoken, and pinned where they matter, before your first chat with someone new.</p>
       </article>
     </div>
   </div>
@@ -743,12 +550,12 @@
       <div>
         <span class="story-eyebrow">Built in Bahrain</span>
         <h2 id="story-title">Why Bahrain first.</h2>
-        <p>Bahrain is a tight-knit market where word-of-mouth still travels faster than any algorithm. Everyone knows someone who bakes, sews, or paints — but discovery is stuck in Instagram stories and WhatsApp forwards.</p>
-        <p>Sprout takes that warmth and gives it an address. A digital shelf for every neighbourhood baker, crafter, and home cook — starting with Adliya, Saar, Riffa, Muharraq, and growing outward.</p>
+        <p>Bahrain is a tight-knit market where word-of-mouth still travels faster than any algorithm. Everyone knows someone who bakes, sews, or paints. but discovery is stuck in Instagram stories and WhatsApp forwards.</p>
+        <p>Sprout takes that warmth and gives it an address. A digital shelf for every neighbourhood baker, crafter, and home cook. starting with Adliya, Saar, Riffa, Muharraq, and growing outward.</p>
         <span class="story-foot">Built in Bahrain · Arabic support coming soon</span>
       </div>
       <div class="story-art" aria-hidden="true">
-        <img src="assets/img/illustrations/illustration-13.svg" alt="">
+        <img src="assets/img/illustrations/illustration-10.svg" alt="">
       </div>
     </div>
   </div>
@@ -767,14 +574,14 @@
     <div class="faq-list">
       <details>
         <summary>Is Sprout free for sellers?</summary>
-        <div class="faq-body">Yes — at launch, listing on Sprout is completely free. No setup fee, no commission, no platform cut. Sprout's only job in the MVP is to make discovery and chat easy.</div>
+        <div class="faq-body">Yes. at launch, listing on Sprout is completely free. No setup fee, no commission, no platform cut. Sprout's only job in the MVP is to make discovery and chat easy.</div>
       </details>
       <details>
         <summary>Does Sprout handle payments or delivery?</summary>
-        <div class="faq-body">No, and that's intentional. Sprout is a discovery and communication platform. You and the buyer agree on pickup, delivery, or meetup — and on how to settle up — directly in chat. Payments and logistics are deliberately off-platform in the MVP.</div>
+        <div class="faq-body">No, and that's intentional. Sprout is a discovery and communication platform. You and the buyer agree on pickup, delivery, or meetup and on how to settle up directly in chat. Payments and logistics are deliberately off-platform in the MVP.</div>
       </details>
       <details>
-        <summary>I just bake on weekends — is Sprout for me?</summary>
+        <summary>I just bake on weekends, is Sprout for me?</summary>
         <div class="faq-body">Especially for you. Sprout is built for hobbyists and side-hustlers, not professional shops or restaurants. You can pause your shelf any time, set your own contact hours, and only take on the orders you have time for.</div>
       </details>
       <details>
@@ -787,7 +594,7 @@
       </details>
       <details>
         <summary>Will it work in Arabic?</summary>
-        <div class="faq-body">Arabic support — including full RTL layout — is on the roadmap and is treated as a launch requirement, not an afterthought. The app is English-only at the moment, but Arabic is coming before public launch.</div>
+        <div class="faq-body">Arabic support including full RTL layout is on the roadmap and is treated as a launch requirement, not an afterthought. The app is English-only at the moment, but Arabic is coming before public launch.</div>
       </details>
     </div>
   </div>
@@ -812,7 +619,6 @@
       <svg width="18" height="18" style="display:inline-block;vertical-align:-3px;margin-right:6px"><use href="#i-check"/></svg>
       Thanks — we'll be in touch when we launch in your area.
     </div>
-    <p class="waitlist-fineprint">We'll only use your email to let you know about Sprout. No spam, no sharing — pinky promise.</p>
   </div>
 </section>
 
