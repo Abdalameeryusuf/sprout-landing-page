@@ -39,41 +39,37 @@
   }
 
   // ------------------------------------------------------------------
-  // 2. Waitlist form — pure-frontend stub
+  // 2. Waitlist form — EmailJS Integration
   // ------------------------------------------------------------------
   var form = document.getElementById('waitlist-form');
-  var success = document.getElementById('waitlist-success');
-  if (form && success) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
+  var waitlistSuccess = document.getElementById('waitlist-success');
 
-      var emailInput = form.querySelector('input[type="email"]');
-      var email = (emailInput.value || '').trim();
-      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        emailInput.focus();
-        emailInput.setAttribute('aria-invalid', 'true');
-        return;
-      }
-      emailInput.removeAttribute('aria-invalid');
+  if (form) {
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
 
-      // Send data to Formspree via AJAX
-      fetch(form.action, {
-        method: form.method,
-        body: new FormData(form),
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          form.style.display = 'none';
-          success.classList.add('is-visible');
-          success.setAttribute('tabindex', '-1');
-          success.focus();
-        } else {
-          alert("Oops! There was a problem submitting your form. Please try again.");
-        }
-      }).catch(error => {
-        alert("Oops! There was a problem submitting your form. Please try again.");
+      var userEmailInput = form.querySelector('input[type="email"]');
+      var userEmail = userEmailInput ? userEmailInput.value : '';
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var originalBtnText = submitBtn.innerText;
+      submitBtn.innerText = 'Sending...';
+      submitBtn.disabled = true;
+
+      emailjs.send("service_pp9uinh", "template_a7iqhjm", {
+          reply_to: userEmail,
+          message: "New waitlist signup from: " + userEmail
+      })
+      .then(function() {
+         form.style.display = 'none';
+         if (waitlistSuccess) {
+           waitlistSuccess.style.display = 'block';
+         }
+      }, function(error) {
+         alert("Oops! Something went wrong. Please try again.");
+         submitBtn.innerText = originalBtnText;
+         submitBtn.disabled = false;
+         console.log("FAILED...", error);
       });
     });
   }
