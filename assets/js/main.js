@@ -44,12 +44,23 @@
   var form = document.getElementById('waitlist-form');
   var waitlistSuccess = document.getElementById('waitlist-success');
 
+  function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
   if (form) {
     form.addEventListener('submit', function (event) {
       event.preventDefault();
 
       var userEmailInput = form.querySelector('input[type="email"]');
-      var userEmail = userEmailInput ? userEmailInput.value : '';
+      var userEmail = userEmailInput ? userEmailInput.value.trim() : '';
+
+      if (!isValidEmail(userEmail)) {
+        userEmailInput.setCustomValidity('Please enter a valid email address.');
+        userEmailInput.reportValidity();
+        return;
+      }
+      userEmailInput.setCustomValidity('');
 
       var submitBtn = form.querySelector('button[type="submit"]');
       var originalBtnText = submitBtn.innerText;
@@ -57,6 +68,8 @@
       submitBtn.disabled = true;
 
       emailjs.send("service_pp9uinh", "template_a7iqhjm", {
+          to_email: "abdalameeryusuf@gmail.com",
+          user_email: userEmail,
           reply_to: userEmail,
           message: "New waitlist signup from: " + userEmail
       })
