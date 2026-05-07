@@ -68,7 +68,8 @@
       submitBtn.disabled = true;
 
       emailjs.send("service_pp9uinh", "template_a7iqhjm", {
-          to_email: "abdalameeryusuf@gmail.com",
+          to_email: "contact@sproutbh.com",
+          name: userEmail,
           user_email: userEmail,
           reply_to: userEmail,
           message: "New waitlist signup from: " + userEmail
