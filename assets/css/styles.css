@@ -1154,6 +1154,13 @@ section { padding-block: var(--section-pad); }
   min-width: 0;
 }
 .waitlist-form input[type="email"]::placeholder { color: var(--grey-500); }
+.waitlist-form input[type="email"]:-webkit-autofill,
+.waitlist-form input[type="email"]:-webkit-autofill:hover,
+.waitlist-form input[type="email"]:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  box-shadow: 0 0 0px 1000px #ffffff inset;
+  -webkit-text-fill-color: var(--sprout-teal);
+}
 .waitlist-form .btn { height: 48px; }
 .waitlist-success {
   display: none;
